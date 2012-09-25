@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mvc4AppWithResource.Resources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,8 @@ namespace Mvc4AppWithResource.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.Message = Resource1.String1;
+
             return View();
         }
 
